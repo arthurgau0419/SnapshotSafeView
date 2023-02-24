@@ -39,6 +39,8 @@ public final class SnapshotSafeViewFlutterInterceptor {
     private let multiplatformSnapshotSafeView: UIView
     private let rootControllerInterceptor: RootControllerInterceptorProtocol
 
+    public var bridgeView: MultiplatformBridgeView { multiplatformSnapshotSafeView as! MultiplatformBridgeView }
+    
     // MARK: - Initialization
 
     public init() {

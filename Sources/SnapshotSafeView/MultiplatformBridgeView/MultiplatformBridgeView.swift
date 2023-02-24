@@ -16,6 +16,14 @@ open class MultiplatformBridgeView: UIView {
 
     // MARK: - Initialization
 
+    public func setContentHideInScreenshots() {
+        screenshotSafeContainer.setupContanerAsHideContentInScreenshots()
+    }
+    
+    public func setContentDisplayInScreenshots() {
+        screenshotSafeContainer.setupContanerAsDisplayContentInScreenshots()
+    }
+
     public init() {
         self.screenshotSafeContainer = MultiplatformContainer(content: ViewWithDisabledPointInsideCheck())
         super.init(frame: .zero)
