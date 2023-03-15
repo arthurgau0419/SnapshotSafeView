@@ -25,7 +25,7 @@ open class MultiplatformBridgeView: UIView {
     }
 
     public init() {
-        self.screenshotSafeContainer = MultiplatformContainer(content: ViewWithDisabledPointInsideCheck())
+        self.screenshotSafeContainer = MultiplatformContainer(content: UIView())
         super.init(frame: .zero)
 
         configureScreenshotSafeContainer()
